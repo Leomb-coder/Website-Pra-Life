@@ -1,0 +1,22 @@
+.bg-custom-red {background-color: #ab3b46 !important;}
+.bg-custom-beige {background-color: #f8f4f0 !important;}
+.bg-custom-dark-red {background-color: #772c36 !important;}
+.bg-custom-dark-beige {background-color: #dfdbd7 !important;}
+
+.text-custom-light-beige {color: #ebe2d7 !important; transition: background-color 0.3s ease;}
+.text-custom-light-beige:hover {color: #bab7b6 !important;}
+
+.border-custom-light-beige {border-color: #ebe2d7 !important;}
+.border-custom-light-beige:hover {border-color: #bab7b6 !important;}
+
+.unselectable {
+    user-select: none;
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+}
+
+
+body {
+    background-color: #ab3b46 !important;
+}
