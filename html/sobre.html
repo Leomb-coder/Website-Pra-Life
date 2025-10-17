@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="../script/index.js" defer></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/590/590685.png">
+    <title>Sobre nós</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark-red unselectable">
+        <div class="container mx-auto">
+            <a class="navbar-brand" href="../index.html">Pra Life</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-4">
+                    <li class="nav-item"><a class="nav-link text-custom-light-beige" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-custom-light-beige" href="html/sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-custom-light-beige" href="">Contato</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <!-- Link Sair -->
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-custom-light-beige" id="botao-sair" href="#"
+                            onclick="sair(event)">Sair</a>
+                    </li>
+
+                    <!-- Links de Entrar / Cadastrar -->
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-custom-light-beige" href="account/login.html" target="_blank"
+                            id="link-entrar">Entrar</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-custom-light-beige" href="account/register.html" target="_blank"
+                            id="link-cadastrar">Cadastrar</a>
+                    </li>
+
+                    <!-- Ícone de usuário -->
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-custom-light-beige" href="">
+                            <i class="bi bi-person-circle fs-4"></i>
+                        </a>
+                    </li>
+
+                    <!-- Ícone de carrinho -->
+                    <li class="nav-item">
+                        <a class="nav-link text-custom-light-beige">
+                            <i class="bi bi-cart fs-4"></i>
+                            <p class="d-inline" id="numero-carrinho">0</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim da NavBar -->
+
+    <div class="bg-custom-red text-white uns p-5">
+        <a href="../index.html" class="d-inline nav-link text-custom-light-beige">PÁGINA INICIAL </a>/<a
+            href="sobre.html" class="d-inline nav-link text-custom-light-beige text-decoration-underline"> SOBRE NÓS</a>
+        <h3 class="text-custom-light-beige-no-hover mt-2">Quem somos</h3>
+        <div class="bg-light text-custom-dark-red-no-hover rounded p-3 font-size-custom-medium container">
+            <div>
+                <p>
+                    <h4>Somos a Pra Life!</h4>
+                </p>
+                <p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rerum sunt sequi officia. Eius cum eaque numquam at amet itaque deleniti similique odio, quod sint quibusdam provident laborum qui architecto.</span>
+                </p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>
+                        <h5 class="sobre_h2">Subtitulo</h5>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea nobis eos et laborum hic totam fugiat blanditiis impedit dignissimos rem, qui quaerat esse vel! Ipsam iure eveniet officia doloribus.</span>
+                        <br>
+                        <br>
+                        <h5 class="sobre_h2">Subtitulo</h5>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, facilis id blanditiis tenetur laudantium, eaque repellat est accusantium maxime hic consequuntur accusamus sequi numquam eveniet explicabo rerum. Ipsum, modi velit.</span>
+                        <br>
+                        <br>
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam et iure provident. Quis voluptates possimus, doloribus velit molestias perspiciatis tempore nostrum at molestiae ullam! Libero numquam asperiores animi cumque deleniti?</span>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
