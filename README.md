@@ -36,29 +36,22 @@ Como este é um projeto de frontend estático, não são necessários passos esp
 
 ## Estrutura do Projeto
 
-/ ├── index.html # Página inicial e listagem principal de produtos 
-  ├── account/ 
-    │ 
-    ├── login.html # Página de login do usuário 
-    │ 
-    ├── register.html # Página de registro de novo usuário 
-    │ 
-    └── senha.html # Página de recuperação de senha 
-  ├── html/ 
-    │ 
-    └── sobre.html # Página "Sobre Nós" 
-  ├── script/ 
-    │ 
-    ├── index.js # Gerencia atualizações da UI da homepage, status de login e contador do carrinho 
-    │ 
-    ├── login.js # Lógica de login de usuários usando localStorage 
-    │ 
-    ├── register.js # Gerencia registro de novos usuários e armazenamento de dados 
-    │ 
-    └── senha.js # Destinado à lógica de alteração de senha (atualmente vazio) 
-  └── style/ 
-    ├── account.css # Estilos personalizados para páginas de conta (login, registro) 
-    └── index.css # Estilo principal do site
+/
+├── index.html                # Homepage and main product listing
+├── account/
+│   ├── login.html            # User login page
+│   ├── register.html         # New user registration page
+│   └── senha.html            # Password recovery page
+├── html/
+│   └── sobre.html            # "About Us" page
+├── script/
+│   ├── index.js              # Handles homepage UI updates, login status, and cart counter
+│   ├── login.js              # Manages user login logic against localStorage
+│   ├── register.js           # Handles new user registration and data storage
+│   └── senha.js              # Intended for password change logic (currently empty)
+└── style/
+    ├── account.css           # Custom styles for the account pages (login, register)
+    └── index.css             # Main stylesheet for the site
 
 
 ## Detalhes de Funcionalidade
