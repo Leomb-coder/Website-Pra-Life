@@ -1,5 +1,4 @@
 # Pra Life - Site de E-commerce
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/LeomMb-coder/Website-Pra-Life)
 
 "Pra Life" é um protótipo de site de e-commerce responsivo para uma loja especializada em produtos alimentícios saudáveis e voltados ao estilo de vida. O site possui autenticação de usuários, navegação de produtos, filtragem e um sistema de carrinho de compras, tudo construído com HTML, CSS, JavaScript e Bootstrap. Os dados dos usuários são gerenciados localmente usando o `localStorage` do navegador.
 
