@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="../script/index.js" defer></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/590/590685.png">
+    <title>Sobre nós</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        /* Quadrado principal */
+        .personalize-container {
+            border: 3px solid #8b0000;
+            border-radius: 15px;
+            background-color: #fff;
+            color: #8b0000;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .personalize-title {
+            border-bottom: 2px solid #8b0000;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* Quadrado de cada item */
+        .option-box {
+            border: 2px solid #8b0000;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            background-color: #8b0000;
+            /* Fundo padrão vinho */
+            color: white;
+            /* Texto branco */
+        }
+
+        .option-box:hover {
+            background-color: #fff;
+            /* Fica branco ao passar o mouse */
+            color: #8b0000;
+            /* Texto vinho */
+            transform: scale(1.05);
+        }
+
+        /* Ajuste nas imagens pra ficarem bonitas nos dois modos */
+        .option-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 2px solid #8b0000;
+            background-color: white;
+        }
+
+        @media (max-width: 768px) {
+            .option-box img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark-red unselectable">
+        <div class="container mx-auto">
+            <a class="navbar-brand" href="../index.html">Pra Life</a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-4">
+                    <li class="nav-item"><a class="nav-link text-custom-light-beige" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-custom-light-beige" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-custom-light-beige" href="">Contato</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <!-- Link Sair -->
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-custom-light-beige" id="botao-sair" href="#"
+                            onclick="sair(event)">Sair</a>
+                    </li>
+
+                    <!-- Links de Entrar / Cadastrar -->
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-custom-light-beige" href="account/login.html" target="_blank"
+                            id="link-entrar">Entrar</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-custom-light-beige" href="account/register.html" target="_blank"
+                            id="link-cadastrar">Cadastrar</a>
+                    </li>
+
+                    <!-- Ícone de usuário -->
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-custom-light-beige" href="">
+                            <i class="bi bi-person-circle fs-4"></i>
+                        </a>
+                    </li>
+
+                    <!-- Ícone de carrinho -->
+                    <li class="nav-item">
+                        <a class="nav-link text-custom-light-beige">
+                            <i class="bi bi-cart fs-4"></i>
+                            <p class="d-inline" id="numero-carrinho">0</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim da NavBar -->
+
+    <div class="bg-custom-red text-white uns p-5">
+        <a href="../index.html" class="d-inline nav-link text-custom-light-beige">PÁGINA INICIAL </a>
+        <h3 class="text-custom-light-beige-no-hover mt-2">Personalize</h3>
+
+        <div class="bg-transparent text-custom-dark-red-no-hover rounded p-3 font-size-custom-medium container">
+            <!-- AQUI COMEÇA A PARTE NOVA -->
+            <div class="personalize-container mt-3">
+                <h4 class="personalize-title">Personalize seu pedido</h4>
+                <!-- Sabores -->
+                <h5 class="mt-4 mb-3">Sabores Personalizados:</h5>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-4">
+                        <div class="option-box">
+                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/CU6HU7WMEVF2THSPFT7RBQXFWM.jpeg"
+                                alt="Banana">
+                            🍌 Banana
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="option-box">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D12AQGC60CgPwbiUw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1694197270162?e=2147483647&v=beta&t=PizxaPRlRlHoJ32vyH3p1Vgu7KfHv0ncE7VC5QArKII"
+                                alt="Açaí">
+                            🫐 Açaí
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="option-box">
+                            <img src="https://fsp.usp.br/eccco/wp-content/uploads/2022/09/sviatoslav-huzii-I497Uc8xWXQ-unsplash-scaled-e1664885131928-1200x951.jpg"
+                                alt="Morango">
+                            🍓 Morango
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complementos -->
+                <h5 style="text-align: center;" class="mt-5 mb-3">Complementos:</h5>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-4">
+                        <div class="option-box">
+                            <img src="https://mst.org.br/wp-content/uploads/2020/08/castanhas19082019.jpg"
+                                alt="Castanha">
+                            🥜 Castanha
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="option-box">
+                            <img src="https://img.drogasil.com.br/uploads/2019/07/canela.jpg" alt="Canela">
+                            🌿 Canela
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Seção de Produtos -->
+    <section class="container my-4 bg-custom-dark-beige py-4 rounded" id="seção_produtos">
+        <div class="row text-center g-4">
+            <!-- Card 1 -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/CU6HU7WMEVF2THSPFT7RBQXFWM.jpeg"
+                        class="card-img-top" alt="Produto 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">🍌 Banana</h5>
+                        <!-- Botões de comprar e carrinho -->
+                        <div class="d-flex">
+                            <a href="#"
+                                class="btn btn-primary bg-custom-red border-dark mt-1 flex-grow-1 me-1">Personalize</a>
+                            <a href="#" onclick="adicionarCarrinho()"
+                                class="btn btn-primary bg-custom-red border-dark mt-auto"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M444-576v-132H312v-72h132v-132h72v132h132v72H516v132h-72ZM263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM48-792v-72h133l155 360h301l113-264h78L703-476q-9 20-26.5 32T637-432H317l-42 72h493v72H276q-42 0-63-36.5t0-71.5l52-90-131-306H48Z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+
+                <section class="container my-4 bg-custom-dark-beige py-4 rounded" id="seção_produtos">
+        <div class="row text-center g-4">
+            <!-- Card 1 -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://img.drogasil.com.br/uploads/2019/07/canela.jpg"
+                        class="card-img-top" alt="Produto 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">🌿 Canela</h5>
+                        <!-- Botões de comprar e carrinho -->
+                        <div class="d-flex">
+                            <a href="#"
+                                class="btn btn-primary bg-custom-red border-dark mt-1 flex-grow-1 me-1">Personalize</a>
+                            <a href="#" onclick="adicionarCarrinho()"
+                                class="btn btn-primary bg-custom-red border-dark mt-auto"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M444-576v-132H312v-72h132v-132h72v132h132v72H516v132h-72ZM263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM48-792v-72h133l155 360h301l113-264h78L703-476q-9 20-26.5 32T637-432H317l-42 72h493v72H276q-42 0-63-36.5t0-71.5l52-90-131-306H48Z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- AQUI TERMINA A PARTE NOVA -->
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
